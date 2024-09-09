@@ -189,7 +189,10 @@
                         aria-labelledby="contact-form"
                       >
                         <!-- Start image-genarator Row  -->
-                        <form class="rbt-profile-row rbt-default-form row row--15" data-netlify="true" name="contact">
+                        <form class="rbt-profile-row rbt-default-form row row--15" data-netlify="true">
+                          <!-- Hidden input required by Netlify -->
+                          <input type="hidden" name="form-name" value="contact" />
+                          
                           <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                             <div class="form-group">
                               <label for="teamname">Team's Name</label>
@@ -226,6 +229,7 @@
                             </div>
                           </div>
                         </form>
+                        
                         
                         <!-- End Profile Row  -->
                       </div>
